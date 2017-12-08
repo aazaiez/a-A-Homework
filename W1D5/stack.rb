@@ -1,17 +1,19 @@
 class Stack
-   def initialize
-     # create ivar to store stack here!
-   end
+  attr_accessor :stack
+  def initialize
+    @stack = []
+  end
 
-   def add(el)
-     # adds an element to the stack
-   end
+  def add(el)
+    @stack << el
+  end
 
-   def remove
-     # removes one element from the stack
-   end
+  def remove
+    @stack.pop
+  end
 
-   def show
-     # return a copy of the stack
-   end
+  def show
+   @stack.each {|el| puts el}
+  end
+
  end
